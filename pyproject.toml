@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "362final_backup"
+version = "0.1.0"
+description = ""
+package-mode = false
+authors = ["Paris Bozzuti parisbozzuti2026@u.northwestern.edu"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14"
+matplotlib = "^3.10.3"
+scikit-learn = "^1.7.0"
+datasets = "^3.6.0"
+ipywidgets = "^8.1.7"
+nltk = "^3.9.1"
+torch = "2.3.0"
+torchvision = "0.18.0"
+torchaudio = "2.3.0"
+seaborn = "^0.13.2"
+ipykernel = "^6.29.5"
+transformers = "^4.52.4"
+
+umap-learn = "^0.5.7"
+plotly = "^6.2.0"
+sentence-transformers = "^5.1.0"
+pandas = "^2.3.2"
+pyarrow = "^22.0.0"
+pytest = "^8.4.2"
+tensorflow-metal = "1.1.0"
+keras = "^3.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
