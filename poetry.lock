@@ -1856,9 +1856,9 @@ files = [
 
 [package.dependencies]
 numpy = [
+    {version = ">=1.23.3", markers = "python_version >= \"3.11\""},
     {version = ">=2.1.0", markers = "python_version >= \"3.13\""},
     {version = ">=1.26.0", markers = "python_version == \"3.12\""},
-    {version = ">=1.23.3", markers = "python_version == \"3.11\""},
 ]
 
 [package.extras]
@@ -2557,8 +2557,8 @@ files = [
 
 [package.dependencies]
 typing-extensions = [
-    {version = ">=4.12.0", markers = "python_version >= \"3.13\""},
     {version = ">=4.6.0"},
+    {version = ">=4.12.0", markers = "python_version >= \"3.13\""},
 ]
 
 [package.extras]
@@ -2648,8 +2648,8 @@ files = [
 
 [package.dependencies]
 numpy = [
-    {version = ">=1.26.0", markers = "python_version >= \"3.12\""},
     {version = ">=1.23.2", markers = "python_version == \"3.11\""},
+    {version = ">=1.26.0", markers = "python_version >= \"3.12\""},
 ]
 python-dateutil = ">=2.8.2"
 pytz = ">=2020.1"
@@ -3939,6 +3939,25 @@ files = [
 ]
 
 [[package]]
+name = "timm"
+version = "1.0.22"
+description = "PyTorch Image Models"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = [
+    {file = "timm-1.0.22-py3-none-any.whl", hash = "sha256:888981753e65cbaacfc07494370138b1700a27b1f0af587f4f9b47bc024161d0"},
+    {file = "timm-1.0.22.tar.gz", hash = "sha256:14fd74bcc17db3856b1a47d26fb305576c98579ab9d02b36714a5e6b25cde422"},
+]
+
+[package.dependencies]
+huggingface_hub = "*"
+pyyaml = "*"
+safetensors = "*"
+torch = "*"
+torchvision = "*"
+
+[[package]]
 name = "tokenizers"
 version = "0.22.1"
 description = ""
@@ -4662,4 +4681,4 @@ propcache = ">=0.2.1"
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.11,<3.14"
-content-hash = "37799b60c2688def4e16f8f8312e82572efb1cd72a6baf5d250354c8f22eff23"
+content-hash = "95ea9daeda3c4d5777238d9bfec5eecffdec7881d15ea88bf65f2aaa8c0c7233"
